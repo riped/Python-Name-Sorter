@@ -2,7 +2,6 @@
 # Sean Corrigan 2017
 # ICS 3U1
 # Name Groups Program
-# PC MAC: D0:50:99:A9:9B:31
 #===============================================================================
 
 # import libraries
@@ -26,7 +25,7 @@ except ValueError:  # If it isn't a whole number then
 	wait = raw_input('PRESS ENTER TO RESTART')  # Ask to continue
 	os.execl(sys.executable, sys.executable, *sys.argv)  # restart program
 	
-if numberofstudents < 0:  # Make sure that the amount of students isn't a negative 
+if numberofstudents < 1:  # Make sure that the amount of students isn't a negative 
 		
 		print ("Stop, Please. Don't Break me any more")  # Beg for them to stop
 		wait = raw_input('PRESS ENTER TO RESTART')  # Ask to continue
